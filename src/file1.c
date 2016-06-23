@@ -2,6 +2,6 @@
 
 main()
 {
-printf("test program");
+printf("test program for temp2 branch");
 /* Added a comment */
 }

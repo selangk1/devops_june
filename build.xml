@@ -1,4 +1,4 @@
-<project name="test" default="compile" basedir=".">
+<project name="test" default="dist" basedir=".">
   <description>
     simple example build file
   </description>
@@ -21,7 +21,7 @@
     <tstamp/>
     <!-- Copy the source files used for compilation -->
     <copy todir="${src}">
-	    <fileset dir="C:\userdata\sundarae\java-prg"/>
+	    <fileset dir="java_input_files"/>
     </copy>
   </target>
   
@@ -45,5 +45,6 @@
     <!-- Delete the ${build} and ${dist} directory trees -->
     <delete dir="${build}"/>
     <delete dir="${dist}"/>
+    <delete dir="${src}"/>
   </target>
 </project>
